@@ -4,6 +4,8 @@ jobs:
   test-de-fonctionnement:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout
+        uses: actions/checkout@v4
       - name: run de npm install
         run: npm install
       - name: run de npm run build
