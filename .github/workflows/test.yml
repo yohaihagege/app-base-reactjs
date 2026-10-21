@@ -11,6 +11,6 @@ jobs:
       - name: run de npm run build
         run: npm run build
       - name: run de npm start
-        run: npm start
+        run: npm start &
       - name: test de la route
         run: curl http://localhost:3000
